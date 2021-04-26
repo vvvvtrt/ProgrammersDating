@@ -56,7 +56,6 @@ def handle_data():
             return fin.read()
     else:
         g = Read()
-        print(g["code"])
         Write(g["code"] + [request.form['programm']], g["me"] + [request.form['me']])
         with open("successfullycreate.html", "rb") as fin:
             return fin.read()
